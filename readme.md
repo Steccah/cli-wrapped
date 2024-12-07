@@ -12,10 +12,6 @@ To use a virtual environment and install requirements with pip, follow these ste
     ```
 
 2. **Activate the virtual environment**:
-    - On Windows:
-        ```bash
-        .\venv\Scripts\activate
-        ```
     - On macOS and Linux using fish:
         ```bash
         source venv/bin/activate.fish
@@ -26,15 +22,14 @@ To use a virtual environment and install requirements with pip, follow these ste
     pip install -r requirements.txt
     ```
 
-4. **Deactivate the virtual environment** (when done):
-    ```bash
-    deactivate
-    ```
-
 ## Usage
 
 To use the script, run the following command:
 
 ```bash
-python fish_cli.py
+python cli-wrapped.py
 ```
+
+## Issues
+> [!WARNING]
+> fish deduplicates commands, so if you run the same command multiple times, it will only be counted once. This is a limitation of the fish shell, and not of this script.
